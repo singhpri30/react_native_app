@@ -1,5 +1,8 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, Button } from "react-native";
+import { StyleSheet,View, Image} from "react-native";
+import colors from "../config/colors";
+
+
 
 export default function ViewImageScreen() {
   return (
@@ -19,6 +22,7 @@ export default function ViewImageScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor:colors.black
   },
   imageContainer: {
     width: "100%",
@@ -26,19 +30,19 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
   },
   closeIcon: {
-    backgroundColor: "red",
+    backgroundColor: colors.primary,
     height: 50,
     width: 50,
     position:"absolute",
-    top:40,
+    top:50,
     left:10
   },
   deleteIcon: {
-    backgroundColor: "green",
+    backgroundColor: colors.secondary,
     height: 50,
     width: 50,
     position:"absolute",
-    top:40,
+    top:50,
     right:10
   },
 });

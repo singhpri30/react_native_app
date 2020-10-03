@@ -21,7 +21,7 @@ export default function App() {
         secureTextEntry={true}
       ></TextInput>
       <TouchableOpacity style={styles.submitButton}>
-        <Text styele={styles.signBtn}>Sign Up</Text>
+        <Text style={styles.signBtn}>Sign Up</Text>
       </TouchableOpacity>
     </View>
   );
