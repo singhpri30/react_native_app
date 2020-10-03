@@ -2,12 +2,14 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 // import RegistrationForm from "./app/component/RegistrationScreen";
-import Welcome from "./app/component/WelcomeScreen"
+// import Welcome from "./app/component/WelcomeScreen"
+import ImageScreen from "./app/component/ViewImageScreen"
 
 export default function App() {
   return (
     
-      <Welcome></Welcome>
+      // <Welcome></Welcome>
+<ImageScreen></ImageScreen>
    
   );
 }
