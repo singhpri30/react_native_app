@@ -7,6 +7,7 @@ import {
   Platform,
 } from "react-native";
 import ListItem from "../component/ListItem";
+import Screen from "../component/Screen";
 
 const messages = [
   {
@@ -31,7 +32,7 @@ const messages = [
 
 export default function MessageScreen() {
   return (
-    <SafeAreaView style={styles.screen}>
+    <Screen>
       <FlatList
         data={messages}
         keyExtractor={(message) => {
@@ -45,12 +46,8 @@ export default function MessageScreen() {
           />
         )}
       ></FlatList>
-    </SafeAreaView>
+    </Screen>
   );
 }
 
-const styles = StyleSheet.create({
-    screen:{
-        paddingTop:Platform.OS==="android"?StatusBar.currentHeight:0
-    }
-});
+const styles = StyleSheet.create({});
